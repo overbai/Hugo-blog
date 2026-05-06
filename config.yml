@@ -1,0 +1,22 @@
+baseURL: http://localhost:1313/
+languageCode: en-us
+title: 望川
+theme: hugo-PaperMod
+
+params:
+  author: 云朵少年
+  description: 欢迎来到我的博客
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableHLJS: false
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true

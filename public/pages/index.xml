@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Pages on 望川</title>
+    <link>http://localhost:1313/pages/</link>
+    <description>Recent content in Pages on 望川</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 23 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/pages/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Archives</title>
+      <link>http://localhost:1313/pages/2025-12-23-archives/</link>
+      <pubDate>Tue, 23 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pages/2025-12-23-archives/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Links</title>
+      <link>http://localhost:1313/pages/2025-12-23-links/</link>
+      <pubDate>Tue, 23 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pages/2025-12-23-links/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Terms</title>
+      <link>http://localhost:1313/pages/2025-12-23-terms/</link>
+      <pubDate>Tue, 23 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pages/2025-12-23-terms/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>about</title>
+      <link>http://localhost:1313/pages/2025-05-03-about/</link>
+      <pubDate>Sat, 03 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pages/2025-05-03-about/</guid>
+      <description>&lt;p&gt;你好。&lt;/p&gt;
+&lt;p&gt;我是一个把中年活成&amp;quot;轻熟芝士&amp;quot;的顽固分子。表面上看是40岁，但根据脑内小剧场活跃度计算，心理年龄在25岁到82岁之间随机波动——取决于当天喝的是金骏眉还是冰美式。&lt;/p&gt;
+&lt;p&gt;本职是体制内社畜，用电脑和A4纸堆砌形式主义；副业是文字手工“酱人”，擅长把生活琐事酿成1000字流水账。图片是立下的Flag，文章是姗姗来迟的填坑。知行不一，隔物致知。&lt;/p&gt;
+&lt;p&gt;阅片量超过浓茶摄入量，坚信爆米花电影和文艺闷片应该在同一家影院和谐共生。&lt;/p&gt;
+&lt;p&gt;保持日均两小时高质量发呆，荣获小区天台哲学峰会终身VIP。&lt;/p&gt;
+&lt;p&gt;偶尔被误认为文化人，其实只是活得比较像延时摄影——把岁月过成帧，把思考熬成茶。&lt;/p&gt;
+&lt;p&gt;欢迎来我的精神客厅坐坐，这里有三秒笑点埋伏、五厘米厚的人生滤镜，以及永远留着半杯好故事等你碰杯。&lt;/p&gt;
+&lt;p&gt;PS:不熬成功学鸡汤，但附赠对世界持续过敏却依然热爱的中年浪漫主义。&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;images/224559-175388675909e9.jpg&#34;&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
