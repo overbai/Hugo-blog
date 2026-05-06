@@ -1,20 +1,26 @@
 baseURL: http://localhost:1313/
-languageCode: en-us
-title: 望川
-theme: hugo-PaperMod
+title: 星川
+# 注意：新版本 Hugo 用 locale 替代了 languageCode
+locale: zh-cn
+
+# 核心：声明使用 PaperMod 模块
+module:
+  imports:
+    - path: github.com/adityatelange/hugo-PaperMod
 
 params:
   author: 云朵少年
   description: 欢迎来到我的博客
+  # 隐藏底部信息
+  showPoweredBy: false
+  showFooter: false
+  # 功能开关
   ShowReadingTime: true
   ShowShareButtons: true
-  ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowWordCount: true
-  ShowRssButtonInSectionTermList: true
   UseHugoToc: true
-  disableSpecial1stPost: false
-  disableHLJS: false
+  enableSearch: true
 
 markup:
   goldmark:
