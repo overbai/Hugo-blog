@@ -16,7 +16,7 @@ params:
   showFooter: false
   # 功能开关
   ShowReadingTime: true
-  ShowShareButtons: true
+  ShowShareButtons: false
   ShowBreadCrumbs: true
   ShowWordCount: true
   UseHugoToc: true
