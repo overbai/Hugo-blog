@@ -1,6 +1,8 @@
 +++
 draft = false
+
 title = 'Hello Hugo'
+date: 2026-05-06
 
 +++
 
