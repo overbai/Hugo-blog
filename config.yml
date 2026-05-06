@@ -1,4 +1,4 @@
-baseURL: http://localhost:1313/
+baseURL: https://851022.xyz/
 title: 星川
 # 注意：新版本 Hugo 用 locale 替代了 languageCode
 locale: zh-cn
