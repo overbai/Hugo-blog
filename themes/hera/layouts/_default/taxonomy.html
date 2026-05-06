@@ -1,0 +1,28 @@
+{{ define "main" }}
+
+<div class="post--list">
+    <header class="hTerm--header">
+        <div class="hTerm--content">
+            <h1 class="hTerm--title">{{.Title}}</h1>
+            {{ if .Params.description }}
+            <div class="hTerm--description">{{ .Params.description }}</div>
+            {{ end }}
+        </div>
+    </header>
+    <div class="block--list">
+        {{- $paginator := .Paginate .Data.Pages }}
+        {{ range $paginator.Pages }}
+        {{ if eq .Type "memo" }}
+        {{ partial "memo.html" . }}
+        {{ else }}
+        {{ partial "post.html" . }}
+        {{ end }}
+        {{ end }}
+    </div>
+    <nav class="navigation ">
+        <div class="nav-links">
+            {{ partial "pagination.html" . }}
+        </div>
+    </nav>
+</div>
+{{ end }}

@@ -1,0 +1,53 @@
+{{ define "main" }}
+<div class="articleContainer">
+    <header class="hTerm--header">
+        <div class="hTerm--content">
+            <h1 class="hTerm--title">{{.Title}}</h1>
+            {{ if .Params.description }}
+            <div class="hTerm--description">{{ .Params.description }}</div>
+            {{ end }}
+        </div>
+    </header>
+    <div class="hCard--list">
+        {{- $paginator := .Paginate .Data.Pages }}
+        {{ range $paginator.Pages }} <article class="hCard--item" data-id="{{ .File.UniqueID}}"
+            itemtype="http://schema.org/Article" itemscope="itemscope">
+            {{ if .Params.cover }}
+            {{ with .Resources.Get .Params.cover }}
+            {{ with .Fill "808x484 Center" }}
+            <a href="{{ .Permalink }}" aria-label="{{ .Title }}" class="hCard--coverLink"><img src="{{ .RelPermalink }}"
+                    alt="{{ .Title }}" class="hCard--cover"></a>
+            {{ end }}
+            {{ end }}
+            {{ else if .Content }}
+            {{ $urls := findRE "<img src=\"[^\"|\\\"]*\"" .Content }} {{ if $urls }} {{ $url :=index ($urls) 0 }} {{
+                $url :=(strings.TrimPrefix "<img src=\"" $url) }}
+        {{ $url := strings.TrimRight " \"" $url }} <a href="{{ .Permalink }}" aria-label="{{ .Title }}"
+                class="hCard--coverLink"><img src="{{ $url }}" class="hCard--cover" itemprop="image"
+                alt="{{ .Title }}" /></a>
+            {{ end }}
+            {{ end }}
+            <div class="hCard--content">
+                <h2 class="hCard--title">
+                    <a href="{{ .Permalink }}">
+                        {{ .Title }}
+                    </a>
+                </h2>
+                <div class="hCard--snippet">{{ .Summary | plainify | truncate 60 }}</div>
+                <div class="hCard--meta">
+                    <time datetime='{{.Date.Format "2006-01-02 15:04:01" }}'>{{ .Date.Format
+                        "2006-01-02" }}</time>
+                    <span class="sep"></span>
+                    {{ printf "%d 分钟阅读" .ReadingTime }}
+                </div>
+            </div>
+        </article>
+        {{ end }}
+    </div>
+    <nav class="navigation">
+        <div class="nav-links">
+            {{ partial "pagination.html" . }}
+        </div>
+    </nav>
+</div>
+{{ end }}

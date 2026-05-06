@@ -1,0 +1,46 @@
+.hAuthor {
+    &--card {
+        display: flex;
+        align-items: center;
+        padding: 30px 0;
+        border-top: 1px solid var(--hera-border-color);
+        margin-top: 20px;
+
+        --hera-author-avatar-size: 64px;
+        --hera-author-name-font-size: 20px;
+        --hera-author-description-font-size: 14px;
+
+        .avatar {
+            border-radius: 100%;
+            margin-right: 20px;
+            width: var(--hera-author-avatar-size);
+            height: var(--hera-author-avatar-size);
+        }
+
+        @media screen and (max-width: 768px) {
+            --hera-author-avatar-size: 48px;
+            --hera-author-name-font-size: 16px;
+            --hera-author-description-font-size: 12px;
+
+            .avatar {
+                margin-right: 10px;
+            }
+        }
+    }
+
+    & + .hComment--area {
+        .hComment--title {
+            padding-top: 5px;
+        }
+    }
+
+    &--name {
+        font-weight: 900;
+        font-size: var(--hera-author-name-font-size);
+    }
+
+    &--description {
+        font-size: var(--hera-author-description-font-size);
+        color: var(--hera-text-gray);
+    }
+}

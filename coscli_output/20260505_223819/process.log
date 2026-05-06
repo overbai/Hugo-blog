@@ -1,0 +1,17 @@
+[2026-05-05 22:38:19] Upload public/tags/index.xml to cos://hugo-1301811579/public/tags/index.xml successed(skip),cost 61ms
+[2026-05-05 22:38:19] Upload public/categories/index.xml to cos://hugo-1301811579/public/categories/index.xml successed(skip),cost 120ms
+[2026-05-05 22:38:19] Upload public/tags/index.html to cos://hugo-1301811579/public/tags/index.html successed(skip),cost 187ms
+[2026-05-05 22:38:19] Upload public/404.html to cos://hugo-1301811579/public/404.html successed(skip),cost 167ms
+[2026-05-05 22:38:19] Upload public/index.xml to cos://hugo-1301811579/public/index.xml successed(skip),cost 57ms
+[2026-05-05 22:38:19] Upload public/assets/css/stylesheet.a1a1b118b3e83435265dc39da18e54244bcc0e5481d1d034aadc0c899c51e15c.css to cos://hugo-1301811579/public/assets/css/stylesheet.a1a1b118b3e83435265dc39da18e54244bcc0e5481d1d034aadc0c899c51e15c.css successed(skip),cost 124ms
+[2026-05-05 22:38:19] Upload public/page/1/index.html to cos://hugo-1301811579/public/page/1/index.html successed(skip),cost 49ms
+[2026-05-05 22:38:19] Upload public/sitemap.xml to cos://hugo-1301811579/public/sitemap.xml successed(skip),cost 62ms
+[2026-05-05 22:38:19] Upload public/page to cos://hugo-1301811579/public/page/ successed,cost 83ms
+[2026-05-05 22:38:19] Upload public/assets/css to cos://hugo-1301811579/public/assets/css/ successed,cost 67ms
+[2026-05-05 22:38:19] Upload public/categories to cos://hugo-1301811579/public/categories/ successed,cost 65ms
+[2026-05-05 22:38:19] Upload public/categories/index.html to cos://hugo-1301811579/public/categories/index.html successed(skip),cost 75ms
+[2026-05-05 22:38:19] Upload public/assets to cos://hugo-1301811579/public/assets/ successed,cost 65ms
+[2026-05-05 22:38:19] Upload public/index.html to cos://hugo-1301811579/public/index.html successed(skip),cost 54ms
+[2026-05-05 22:38:19] Upload public/page/1 to cos://hugo-1301811579/public/page/1/ successed,cost 57ms
+[2026-05-05 22:38:19] Upload public/.DS_Store to cos://hugo-1301811579/public/.DS_Store successed(skip),cost 57ms
+[2026-05-05 22:38:19] Upload public/tags to cos://hugo-1301811579/public/tags/ successed,cost 79ms

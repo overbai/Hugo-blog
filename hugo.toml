@@ -1,0 +1,18 @@
+baseURL = 'http://localhost:1313/'
+languageCode = 'zh-cn'
+title = '云朵少年'
+theme = 'touchy'
+
+[params]
+  defaultTheme = 'auto'
+  description = '从 Hexo 迁移过来的新博客'
+
+  [params.homeInfoParams]
+    Title = "欢迎回来 👋"
+    Content = "这里是我的新家，正在从 Hexo 迁移中..."
+
+[[menu.main]]
+  identifier = "home"
+  name = "首页"
+  url = "/"
+  weight = 1
