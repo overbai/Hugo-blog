@@ -11,6 +11,18 @@ module:
 params:
   author: 云朵少年
   description: 欢迎来到我的博客
+  
+  # --- 下面是新增的配置 ---
+  assets:
+    favicon: "/favicon.png"        # 浏览器标签页小图标
+    apple_touch_icon: "/apple-touch-icon.png"
+  
+  label:
+    text: "望川"                    # 左上角显示的名字
+    icon: "/images/avatar.png"     # 左上角头像路径 (放在 static/images/ 下)
+    iconHeight: 35                 # 头像高度
+  # -----------------------
+  
   # 隐藏底部信息
   showPoweredBy: false
   showFooter: false
