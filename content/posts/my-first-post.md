@@ -1,6 +1,8 @@
+---
 title: "HELLO HUGO"
 date: 2026-04-29
-categories: 
+categories: []
+---
 
 换个地方，重新开始。
 
