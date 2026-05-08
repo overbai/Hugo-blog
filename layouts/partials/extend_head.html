@@ -1,0 +1,19 @@
+<!-- 1. 预加载字体：让浏览器一开门就先下载字体，不给它偷懒的机会 -->
+<link rel="preload" href="/fonts/LXGWWenKai-Regular.ttf" as="font" type="font/ttf" crossorigin>
+
+<!-- 2. 引入字体定义 -->
+<style>
+@font-face {
+  font-family: "霞鹭文楷";
+  /* 注意这里的路径要和 preload 里的一致 */
+  src: url("/fonts/LXGWWenKai-Regular.ttf") format("truetype");
+  font-display: swap; /* 关键：在字体下载期间，先用系统字体占位，下载完再替换，消除空白 */
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 3. 全局应用 */
+body {
+  font-family: "霞鹭文楷", sans-serif !important;
+}
+</style>
