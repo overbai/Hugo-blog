@@ -1,15 +1,35 @@
-<!-- 使用 ZeoSeven 公共字体 CDN，国内访问速度快，无需下载到本地 -->
+<!-- 使用国内 ZeoSeven 公共字体 CDN -->
 <link rel="preload" href="https://fonts.zeoseven.com/449/transfer/" as="font" type="font/woff2" crossorigin>
 
 <style>
-  /* 1. 确保全局默认字体是你想要的 */
-  body {
-    font-family: "霞鹭文楷", sans-serif !important;
-  }
+/* 1. 定义字体来源为 CDN */
+@font-face {
+  font-family: "霞鹭文楷";
+  src: url("https://fonts.zeoseven.com/449/transfer/") format("woff2");
+  font-display: swap; 
+}
 
-  /* 2. 专治日期行“精神分裂”的核武器 */
-  .post-meta, 
-  .post-meta * {
-    font-family: "霞鹭文楷", sans-serif !important;
-  }
+/* 2. 强制全局使用（兜底） */
+body {
+  font-family: "霞鹭文楷", sans-serif !important;
+}
+
+/* 3. 专治 PaperMod 的标题（针对首页列表和文章页） */
+.post-title,
+.entry-header h2 {
+  font-family: "霞鹭文楷", sans-serif !important;
+}
+
+/* 4. 专治文章正文（这是之前漏掉的重灾区） */
+.single .post-content,
+.single .post-content p,
+.single .post-content li {
+  font-family: "霞鹭文楷", sans-serif !important;
+}
+
+/* 5. 专治日期和元数据 */
+.post-meta,
+.entry-meta {
+  font-family: "霞鹭文楷", sans-serif !important;
+}
 </style>
