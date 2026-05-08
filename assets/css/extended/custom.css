@@ -1,14 +1,13 @@
-/* 告诉浏览器：去这个网址把“霞鹭文楷”下载下来 */
-@font-face {
-  font-family: "霞鹭文楷";
-  src: url("/fonts/LXGWWenKaiMono-Regular.ttf") format("truetype");
-  font-display: swap; /* 关键：在字体下载完之前，先用系统字体顶着，防止空白 */
-}
+/* ========================================
+   全局字体应用
+   (不再重复定义 @font-face，由 extend_head.html 负责)
+   ======================================== */
 
-/* 强制全局使用 */
+/* 强制全局使用霞鹭文楷 */
 body {
   font-family: "霞鹭文楷", sans-serif !important;
 }
+
 /* 美化文章底部元数据（日期、字数等） */
 .post-meta,
 .entry-meta {
