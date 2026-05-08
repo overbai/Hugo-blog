@@ -1,14 +1,52 @@
-<!-- 强制接管 Body 标签，无视一切插件和主题样式 -->
+<!-- 1. 内联防身：强制整个页面的基础字体，优先级最高，防插件干扰 -->
 <body style="font-family: '霞鹭文楷', sans-serif !important;">
 
-<!-- 预加载 CDN 字体，加快速度 -->
+<!-- 2. 预加载字体 -->
 <link rel="preload" href="https://fonts.zeoseven.com/449/transfer/" as="font" type="font/woff2" crossorigin>
 
-<!-- 定义字体 -->
+<!-- 3. 精准核打击：用强大的 CSS 规则覆盖 Hugo/PaperMod 的每一个角落 -->
 <style>
+  /* --- 第一步：定义字体 --- */
   @font-face {
     font-family: "霞鹭文楷";
     src: url("https://fonts.zeoseven.com/449/transfer/") format("woff2");
     font-display: swap;
+  }
+
+  /* --- 第二步：全局通杀 (覆盖 99% 的内容) --- */
+  /* 强制 body 下的所有元素都用霞鹭文楷 */
+  body * {
+    font-family: "霞鹭文楷", sans-serif !important;
+  }
+
+  /* --- 第三步：专治 PaperMod 的各个“钉子户” --- */
+  
+  /* 1. 文章列表页的标题 (首页和归档页) */
+  .post-entry .entry-title,
+  .post-entry .post-title {
+    font-family: "霞鹭文楷", sans-serif !important;
+  }
+
+  /* 2. 文章详情页的标题 */
+  .single .post-title {
+    font-family: "霞鹭文楷", sans-serif !important;
+  }
+
+  /* 3. 文章正文 (PaperMod 的正文容器) */
+  .single .post-content {
+    font-family: "霞鹭文楷", sans-serif !important;
+  }
+
+  /* 4. 侧边栏和导航菜单 (这是之前没变的地方) */
+  #sidebar a,
+  #nav a,
+  .widget {
+    font-family: "霞鹭文楷", sans-serif !important;
+  }
+
+  /* 5. 文章元信息 (日期、分类、字数等) */
+  .post-meta,
+  .entry-meta {
+    font-family: "霞鹭文楷", sans-serif !important;
   }
 </style>
