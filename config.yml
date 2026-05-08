@@ -12,11 +12,6 @@ params:
   search:
     enable: false
 
-markup:
-  goldmark:
-    renderer:
-      unsafe: true
-
 # -------------------------------------------------------
 
   # 隐藏底部信息
