@@ -9,3 +9,11 @@
 body {
   font-family: "霞鹭文楷", sans-serif !important;
 }
+/* 美化文章底部元数据（日期、字数等） */
+.post-meta,
+.entry-meta {
+  font-family: "霞鹭文楷", "LXGW WenKai", sans-serif !important;
+  color: #666;          /* 柔和的深灰色，不刺眼 */
+  font-size: 0.85rem;   /* 比正文稍小 */
+  opacity: 0.9;         /* 稍微透明一点，弱化存在感 */
+}
