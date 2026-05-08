@@ -9,9 +9,7 @@ params:
   description: 欢迎来到我的博客
   iconHeight: 35
   iconWidth: 35
-# 确保搜索是开启的
-  search:
-    enable: false
+
 
 # ===========================================================
 # 👇 下面是新增的菜单配置 (请确保 menus: 上方有一个空行)
