@@ -1,15 +1,13 @@
-<!-- 方案：使用国内 CDN 加速，无需下载字体到本地 -->
-<link rel="preload" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-web@latest/dist/LXGWWenKaiScreen-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<!-- 使用 ZeoSeven 公共字体 CDN，国内访问速度快，无需下载到本地 -->
+<link rel="preload" href="https://fonts.zeoseven.com/449/transfer/" as="font" type="font/woff2" crossorigin>
 
 <style>
 @font-face {
   font-family: "霞鹭文楷";
-  /* 这里直接引用 CDN 上的 woff2 格式，速度极快 */
-  src: url("https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-web@latest/dist/LXGWWenKaiScreen-Regular.woff2") format("woff2");
-  font-display: swap; /* 保证加载期间不白屏 */
+  src: url("https://fonts.zeoseven.com/449/transfer/") format("woff2");
+  font-display: swap; 
 }
 
-/* 保持和你 custom.css 里一致的全局设置 */
 body {
   font-family: "霞鹭文楷", sans-serif !important;
 }
