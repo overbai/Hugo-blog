@@ -1,0 +1,11 @@
+/* 告诉浏览器：去这个网址把“霞鹭文楷”下载下来 */
+@font-face {
+  font-family: "霞鹭文楷";
+  src: url("/fonts/LXGWWenKaiMono-Regular.ttf") format("truetype");
+  font-display: swap; /* 关键：在字体下载完之前，先用系统字体顶着，防止空白 */
+}
+
+/* 强制全局使用 */
+body {
+  font-family: "霞鹭文楷", sans-serif !important;
+}
