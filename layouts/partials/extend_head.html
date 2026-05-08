@@ -2,13 +2,14 @@
 <link rel="preload" href="https://fonts.zeoseven.com/449/transfer/" as="font" type="font/woff2" crossorigin>
 
 <style>
-@font-face {
-  font-family: "霞鹭文楷";
-  src: url("https://fonts.zeoseven.com/449/transfer/") format("woff2");
-  font-display: swap; 
-}
+  /* 1. 确保全局默认字体是你想要的 */
+  body {
+    font-family: "霞鹭文楷", sans-serif !important;
+  }
 
-body {
-  font-family: "霞鹭文楷", sans-serif !important;
-}
+  /* 2. 专治日期行“精神分裂”的核武器 */
+  .post-meta, 
+  .post-meta * {
+    font-family: "霞鹭文楷", sans-serif !important;
+  }
 </style>
