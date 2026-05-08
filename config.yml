@@ -11,6 +11,8 @@ module:
 params:
   author: 云朵少年
   description: 欢迎来到我的博客
+  search:
+    enable: true
   
   # --- 下面是新增的配置 ---
   assets:
@@ -23,6 +25,20 @@ params:
     iconHeight: 35                 # 头像高度
   # -----------------------
   
+# ----------------- 下面是新增的菜单配置 -----------------
+menu:
+  main:
+    - name: Archive      # 归档
+      url: archives/     # 指向归档页面
+      weight: 10         # 排序，越小越靠左
+    - name: Search       # 搜索
+      url: search/       # 指向搜索页面
+      weight: 20
+    - name: Tags         # 标签页
+      url: tags/         # 指向标签页
+      weight: 30
+# -------------------------------------------------------
+
   # 隐藏底部信息
   showPoweredBy: false
   showFooter: false
