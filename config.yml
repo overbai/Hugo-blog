@@ -3,11 +3,6 @@ title: 望川
 # 注意：新版本 Hugo 用 locale 替代了 languageCode
 locale: zh-cn
 
-# 核心：声明使用 PaperMod 模块
-module:
-  imports:
-    - path: github.com/adityatelange/hugo-PaperMod
-
 # 这是你原来的配置，不用动
 params:
   author: 云朵少年
@@ -19,19 +14,16 @@ params:
     enable: true 
 
 # 👇 下面是新增的菜单配置（请直接复制这块）
-menu:
+menus:
   main:
-    - identifier: archive
-      name: Archive
-      url: /archives/
+    - name: Archive
+      url: archives/
       weight: 10
-    - identifier: search
-      name: Search
-      url: /search/
+    - name: Search
+      url: search/
       weight: 20
-    - identifier: tags
-      name: Tags
-      url: /tags/
+    - name: Tags
+      url: tags/
       weight: 30
 # -------------------------------------------------------
 
