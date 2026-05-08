@@ -12,19 +12,22 @@ params:
   # 确保搜索是开启的
   search:
     enable: true 
-
-# 👇 下面是新增的菜单配置（请直接复制这块）
+    
+# 👇 下面是新增的菜单配置 (请直接替换原内容)
+# ==========================================
 menus:
   main:
-    - name: Archive
-      url: archives/
-      weight: 10
-    - name: Search
-      url: search/
+    - name: Archive      # 归档
+      url: /archives/    # 指向归档页面
+      weight: 10         # 排序，越小越靠左
+    - name: Search       # 搜索
+      url: /search/      # 指向搜索页面
       weight: 20
-    - name: Tags
-      url: tags/
+    - name: Tags         # 标签页
+      url: /tags/        # 指向标签页
       weight: 30
+# ==========================================
+
 # -------------------------------------------------------
 
   # 隐藏底部信息
