@@ -1,6 +1,7 @@
-baseURL: https://baijie.me/!
+theme: PaperMod
+baseURL: https://baijie.me/
 title: 望川
-languageCode: zh-cn
+locale: zh-cn
 defaultContentLanguage: zh-cn
 
 params:
