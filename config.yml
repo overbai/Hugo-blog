@@ -1,30 +1,21 @@
 baseURL: https://baijie.me/
 title: 望川
-# 注意：新版本 Hugo 用 locale 替代了 languageCode
-locale: zh-cn
+languageCode: zh-cn
+defaultContentLanguage: zh-cn
 
-# 这是你原来的配置，不用动
 params:
   author: 云朵少年
   description: 欢迎来到我的博客
   iconHeight: 35
   iconWidth: 35
+  # 搜索功能先关掉，这样最稳定
+  search:
+    enable: false
 
-
-# ===========================================================
-# 👇 下面是新增的菜单配置 (请确保 menus: 上方有一个空行)
-# ===========================================================
-menus:
-  main:
-    - name: Archive      # 归档
-      url: /archives/    # 指向归档页面
-      weight: 10         # 排序，越小越靠左
-    - name: Search       # 搜索
-      url: /search/      # 指向搜索页面
-      weight: 20
-    - name: Tags         # 标签页
-      url: /tags/        # 指向标签页
-      weight: 30
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
 
 # -------------------------------------------------------
 
