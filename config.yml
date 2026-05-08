@@ -8,34 +8,30 @@ module:
   imports:
     - path: github.com/adityatelange/hugo-PaperMod
 
+# 这是你原来的配置，不用动
 params:
   author: 云朵少年
   description: 欢迎来到我的博客
+  iconHeight: 35
+  iconWidth: 35
+  # 确保搜索是开启的
   search:
-    enable: true
-  
-  # --- 下面是新增的配置 ---
-  assets:
-    favicon: "/favicon.png"        # 浏览器标签页小图标
-    apple_touch_icon: "/apple-touch-icon.png"
-  
-  label:
-    text: "望川"                    # 左上角显示的名字
-    icon: "/images/avatar.png"     # 左上角头像路径 (放在 static/images/ 下)
-    iconHeight: 35                 # 头像高度
-  # -----------------------
-  
-# ----------------- 下面是新增的菜单配置 -----------------
+    enable: true 
+
+# 👇 下面是新增的菜单配置（请直接复制这块）
 menu:
   main:
-    - name: Archive      # 归档
-      url: archives/     # 指向归档页面
-      weight: 10         # 排序，越小越靠左
-    - name: Search       # 搜索
-      url: search/       # 指向搜索页面
+    - identifier: archive
+      name: Archive
+      url: /archives/
+      weight: 10
+    - identifier: search
+      name: Search
+      url: /search/
       weight: 20
-    - name: Tags         # 标签页
-      url: tags/         # 指向标签页
+    - identifier: tags
+      name: Tags
+      url: /tags/
       weight: 30
 # -------------------------------------------------------
 
