@@ -1,52 +1,29 @@
-<!-- 1. 内联防身：强制整个页面的基础字体，优先级最高，防插件干扰 -->
-<body style="font-family: '霞鹭文楷', sans-serif !important;">
+<!-- 1. 预加载本地字体，告诉浏览器优先下载 -->
+<link rel="preload" href="/fonts/LXGWWenKai-Regular.woff2" as="font" type="font/woff2" crossorigin>
 
-<!-- 2. 预加载字体 -->
-<link rel="preload" href="https://fonts.zeoseven.com/449/transfer/" as="font" type="font/woff2" crossorigin>
-
-<!-- 3. 精准核打击：用强大的 CSS 规则覆盖 Hugo/PaperMod 的每一个角落 -->
+<!-- 2. 定义字体来源为本地 -->
 <style>
-  /* --- 第一步：定义字体 --- */
   @font-face {
     font-family: "霞鹭文楷";
-    src: url("https://fonts.zeoseven.com/449/transfer/") format("woff2");
+    src: url("/fonts/LXGWWenKai-Regular.woff2") format("woff2");
     font-display: swap;
   }
 
-  /* --- 第二步：全局通杀 (覆盖 99% 的内容) --- */
-  /* 强制 body 下的所有元素都用霞鹭文楷 */
-  body * {
+  /* 3. 暴力通杀：覆盖全站所有元素 */
+  html, body, div, span, applet, object, iframe,
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  a, abbr, acronym, address, big, cite, code,
+  del, dfn, em, img, ins, kbd, q, s, samp,
+  small, strike, strong, sub, sup, tt, var,
+  b, u, i, center,
+  dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend,
+  table, caption, tbody, tfoot, thead, tr, th, td {
     font-family: "霞鹭文楷", sans-serif !important;
   }
 
-  /* --- 第三步：专治 PaperMod 的各个“钉子户” --- */
-  
-  /* 1. 文章列表页的标题 (首页和归档页) */
-  .post-entry .entry-title,
-  .post-entry .post-title {
-    font-family: "霞鹭文楷", sans-serif !important;
-  }
-
-  /* 2. 文章详情页的标题 */
-  .single .post-title {
-    font-family: "霞鹭文楷", sans-serif !important;
-  }
-
-  /* 3. 文章正文 (PaperMod 的正文容器) */
-  .single .post-content {
-    font-family: "霞鹭文楷", sans-serif !important;
-  }
-
-  /* 4. 侧边栏和导航菜单 (这是之前没变的地方) */
-  #sidebar a,
-  #nav a,
-  .widget {
-    font-family: "霞鹭文楷", sans-serif !important;
-  }
-
-  /* 5. 文章元信息 (日期、分类、字数等) */
-  .post-meta,
-  .entry-meta {
+  /* 4. 针对 PaperMod 的特定补丁（防止主题自己耍赖） */
+  .post-title, .post-content, .post-meta, .entry-header, .entry-content, #sidebar, #nav {
     font-family: "霞鹭文楷", sans-serif !important;
   }
 </style>
