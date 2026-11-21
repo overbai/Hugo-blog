@@ -1,10 +1,9 @@
 #!/bin/bash
-cd /Users/$(whoami)/Hugo-blog
+cd "$(dirname "$0")"
 git pull origin main
 git add .
-git commit -m "Auto update blog posts"
+git diff --cached --quiet || git commit -m "Auto update blog posts"
 git push origin main
-echo "博客更新成功！可以关闭窗口了。"
 echo ""
-echo "按任意键退出..."
+echo "✅ 博客更新成功！按任意键关闭窗口..."
 read -n 1 -s -r
