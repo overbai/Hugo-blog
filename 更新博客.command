@@ -25,5 +25,3 @@ echo "④ 推送到 GitHub…"
 git push origin main && echo "   ✅ 已推送，Cloudflare 1-2 分钟自动部署"
 
 echo "==== 更新完成 ✅ ===="
-read -n 1 -s -r -p "按任意键关闭…"
-echo ""
