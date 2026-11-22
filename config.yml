@@ -14,6 +14,7 @@ theme: PaperMod
 params:
   author: 云朵少年
   description: 欢迎来到我的博客
+  disablePoweredBy: true
 
   # 头像/图标配置（确保 static/images/ 下有 favicon.png 和 apple-touch-icon.png）
   assets:
@@ -26,9 +27,6 @@ params:
     icon: "/images/avatar.png"        # 左上角头像路径（放在 static/images/ 下）
     iconHeight: 35                    # 头像高度（像素）
 
-  # 底部信息隐藏（不想显示就用 false）
-  showPoweredBy: false
-  showFooter: false
 
   # 功能开关（按需开启/关闭）
   ShowReadingTime: true   # 阅读时间
