@@ -1,0 +1,9 @@
+.first-entry .entry-content {
+    -webkit-line-clamp: 5;
+    line-clamp: 5;
+}
+
+.post-entry .entry-content {
+    -webkit-line-clamp: 5;
+    line-clamp: 5;
+}
