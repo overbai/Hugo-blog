@@ -26,3 +26,4 @@ git push origin main && echo "   ✅ 已推送，Cloudflare 1-2 分钟自动部�
 
 echo "==== 更新完成 ✅ ===="
 read -n 1 -s -r -p "按任意键关闭窗口…" < /dev/tty
+osascript -e 'tell application "Terminal" to close front window' >/dev/null 2>&1
