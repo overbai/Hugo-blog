@@ -25,9 +25,12 @@ echo "④ 推送到 GitHub…"
 git push origin main || ERR=1
 
 if [ "$ERR" = 0 ]; then
-  echo "==== 更新完成 ✅ 窗口自动关闭 ===="
-  sleep 1.5
+  echo ""
+  echo "✅ 博客更新成功！窗口即将自动关闭…"
+  sleep 2
+  osascript -e 'tell application "Terminal" to close (every window whose name contains "更新博客")'
 else
-  echo "==== ⚠️ 有步骤出错，窗口保留，看上面报错 ===="
+  echo ""
+  echo "⚠️ 有步骤出错，窗口保留，请看上面报错"
   read -r -p "按回车键关闭…" < /dev/tty
 fi
