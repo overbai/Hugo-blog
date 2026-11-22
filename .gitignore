@@ -3,3 +3,7 @@
 
 # Mac 系统文件
 .DS_Store
+# Hugo 构建缓存与锁文件（不进仓库）
+/resources/
+.hugo_build.lock
+coscli_output/

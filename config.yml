@@ -35,9 +35,26 @@ params:
   ShowWordCount: true     # 字数统计
   UseHugoToc: true        # Hugo 自带目录
   enableSearch: true      # 搜索功能
+  summaryLength: 500
 
 # 6. 标记语言渲染（Goldmark 配置，支持 HTML 片段）
 markup:
   goldmark:
     renderer:
       unsafe: true  # 允许渲染 HTML（比如代码块、自定义标签）
+# 搜索索引生成（PaperMod 搜索必需）
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+
+# 导航菜单（放大镜搜索图标）
+menu:
+  main:
+    - identifier: search
+      name: ""
+      url: /search/
+      weight: 99
+      pre: '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>'
